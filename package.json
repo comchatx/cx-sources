@@ -1,0 +1,52 @@
+{
+  "name": "cx-sources",
+  "version": "0.1.3",
+  "description": "Manages connected data sources and their charges.",
+  "license": "MIT",
+  "author": "ComChatX",
+  "homepage": "https://github.com/comchatx/cx-sources#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comchatx/cx-sources.git"
+  },
+  "bugs": "https://github.com/comchatx/cx-sources/issues",
+  "keywords": [
+    "pi-package"
+  ],
+  "type": "module",
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  },
+  "files": [
+    "skills"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "comchatx": {
+    "about": "统一管理数据源和相关扣款。",
+    "description": "cx 使用数据源时，cx-sources 会检查数据源状态并完成扣款。无需另外设置，也不会产生额外费用。",
+    "mark": {
+      "line": "layers"
+    },
+    "section": "extensions",
+    "order": 80,
+    "skills": {
+      "cx-sources": {
+        "about": {
+          "en": "Lets cx purchase and read data from enabled sources.",
+          "zh": "让 cx 从已启用的数据源购买和读取数据。"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.4.0",
+    "@types/node": "26.2.0",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11"
+  }
+}
