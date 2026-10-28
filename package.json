@@ -1,6 +1,6 @@
 {
   "name": "cx-sources",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Manages connected data sources and their charges.",
   "license": "MIT",
   "author": "ComChatX",
@@ -17,18 +17,24 @@
   "pi": {
     "skills": [
       "./skills"
+    ],
+    "prompts": [
+      "./prompts"
     ]
   },
   "files": [
-    "skills"
+    "skills",
+    "prompts",
+    "README.zh-CN.md"
   ],
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
   "comchatx": {
-    "about": "统一管理数据源和相关扣款。",
-    "description": "cx 使用数据源时，cx-sources 会检查数据源状态并完成扣款。无需另外设置，也不会产生额外费用。",
+    "description": {
+      "zh": "统一管理数据源和相关扣款。"
+    },
     "mark": {
       "line": "layers"
     },
@@ -36,10 +42,15 @@
     "order": 80,
     "skills": {
       "cx-sources": {
-        "about": {
-          "en": "Lets cx purchase and read data from enabled sources.",
-          "zh": "让 cx 从已启用的数据源购买和读取数据。"
-        }
+        "zh": "让 cx 从已启用的数据源购买和读取数据，查询数据费用，并修改数据设置。"
+      }
+    },
+    "prompts": {
+      "data-costs": {
+        "zh": "查看每个数据源的价格，以及本月在它上面的花费"
+      },
+      "cost-first": {
+        "zh": "在 cx 购买任何数据之前，先知道一个问题要花多少钱"
       }
     }
   },
