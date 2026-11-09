@@ -1,6 +1,6 @@
 {
   "name": "cx-sources",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Manages connected data sources and their charges.",
   "license": "MIT",
   "author": "ComChatX",
@@ -32,9 +32,7 @@
     "test": "vitest run"
   },
   "comchatx": {
-    "description": {
-      "zh": "统一管理数据源和相关扣费。"
-    },
+    "about": "统一管理数据源和相关扣费。",
     "mark": {
       "line": "layers"
     },
