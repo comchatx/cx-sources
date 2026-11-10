@@ -1,8 +1,4 @@
-# cx-sources
-
-cx-sources is how cx buys data for you. When a question needs data from a source such as Keepa, cx-sources checks that the source is installed and on, buys only what the answer needs, and records each purchase against your balance, so every purchase shows up in that source's Usage.
-
-It also lets cx tell you what data will cost before it buys any, in dollars, and change your data settings when you ask it to.
+When an answer needs data from a source such as Keepa, cx checks the source is on, buys only what the answer needs, and charges each purchase to your balance, shown in that source's Usage.
 
 ## What it costs
 
@@ -10,4 +6,4 @@ cx-sources itself is free and needs no setup. Each source you install charges fo
 
 ## How it installs
 
-It installs with each data source, which needs it.
+It installs with each data source that needs it.
