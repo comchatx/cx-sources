@@ -41,3 +41,8 @@ it("ships its skills, its templates, its READMEs and its license, and nothing el
   expect(packed[0]!.files.map((file) => file.path).sort()).toEqual(["LICENSE", "README.md", "README.zh-CN.md", "package.json", ...shipped].sort());
   expect(manifest.files).toEqual(["skills", "prompts", "README.zh-CN.md"]);
 });
+
+it("the card's name is comchatx.name, the one signed on 2026-11-11", () => {
+  const field = (JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")) as { comchatx: { name?: unknown } }).comchatx;
+  expect(field.name).toBe("Data Source Billing");
+});
