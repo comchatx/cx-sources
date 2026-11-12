@@ -1,6 +1,6 @@
 {
   "name": "cx-sources",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Lists each data charge in Usage, and quotes first if you ask.",
   "license": "MIT",
   "author": "ComChatX",
@@ -32,6 +32,7 @@
     "test": "vitest run"
   },
   "comchatx": {
+    "name": "Data Source Billing",
     "about": "每笔数据扣费都记进用量，也可以让 cx 先报价。",
     "mark": {
       "line": "layers"
