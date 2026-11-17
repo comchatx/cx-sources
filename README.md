@@ -1,4 +1,4 @@
-When an answer needs data from a source such as Keepa API, cx checks the source is on, buys only what the answer needs, and charges each purchase to your balance, shown in that source's Usage.
+When an answer needs data from a source such as [Keepa API](https://www.npmjs.com/package/cx-keepa), cx checks the source is on, buys only what the answer needs, and charges each purchase to your balance, shown in that source's Usage.
 
 ## What it costs
 
