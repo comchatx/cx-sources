@@ -43,6 +43,7 @@ it("ships its skills, its templates, its READMEs and its license, and nothing el
 });
 
 it("the card's name is comchatx.name, the one signed on 2026-11-11", () => {
-  const field = (JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")) as { comchatx: { name?: unknown } }).comchatx;
-  expect(field.name).toBe("Data Source Billing");
+  const field = (JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8")) as { comchatx: { name?: unknown; nameZh?: unknown } }).comchatx;
+  expect(field.name).toBe("Data Source Core");
+  expect(field.nameZh).toBe("数据源基础功能");
 });
