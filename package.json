@@ -1,6 +1,6 @@
 {
   "name": "cx-sources",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Lists each data charge in Usage, and quotes first if you ask.",
   "license": "MIT",
   "author": "ComChatX",
@@ -42,7 +42,8 @@
     "order": 80,
     "skills": {
       "cx-sources": {
-        "zh": "让 cx 从已启用的数据源购买和读取数据，查询数据费用，并修改数据设置。"
+        "zh": "购买和读取数据，查数据费用，修改数据设置。",
+        "en": "Buys and reads data, says what it costs, and changes data settings."
       }
     },
     "prompts": {
@@ -50,7 +51,7 @@
         "zh": "查看每个数据源的价格，以及本月在它上面的花费"
       },
       "cost-first": {
-        "zh": "在 cx 购买任何数据之前，先知道一个问题要花多少钱"
+        "zh": "先估算这个问题要花多少数据费，等我同意再买：【问题】"
       }
     }
   },
