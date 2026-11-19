@@ -2,6 +2,7 @@
 
 ## 0.1.10
 
+- The card's line is the one signed on 2026-11-19: `comchatx.about` 「替 cx 买数据，只买用得到的，可以先报价。」 and `description` "Buys only the data cx needs, and quotes first if you ask."
 - The README's first paragraph, in Chinese, is the one signed on 2026-11-18 (「这是所有数据源插件的基础，……记在「设置」的「用量」里。」), and in English the paragraph of the same meaning ("This is the base every data-source plugin stands on: … listed in Settings › Usage.").
 - The skill's line is the one signed on 2026-11-17, in `comchatx.skills.cx-sources` as `zh` 「购买和读取数据，查数据费用，修改数据设置。」 and `en` "Buys and reads data, says what it costs, and changes data settings.". `SKILL.md`'s `description` is unchanged.
 - The `cost-first` template reads the line signed on 2026-11-17: "Before buying any data, tell me what this question costs and wait for my go-ahead: [question]" as its `description`, and 「先估算这个问题要花多少数据费，等我同意再买：【问题】」 as `comchatx.prompts.cost-first.zh`.

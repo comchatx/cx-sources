@@ -1,7 +1,7 @@
 {
   "name": "cx-sources",
   "version": "0.1.10",
-  "description": "Lists each data charge in Usage, and quotes first if you ask.",
+  "description": "Buys only the data cx needs, and quotes first if you ask.",
   "license": "MIT",
   "author": "ComChatX",
   "homepage": "https://github.com/comchatx/cx-sources#readme",
@@ -34,7 +34,7 @@
   "comchatx": {
     "name": "Data Source Core",
     "nameZh": "数据源基础功能",
-    "about": "每笔数据扣费都记进用量，也可以让 cx 先报价。",
+    "about": "替 cx 买数据，只买用得到的，可以先报价。",
     "mark": {
       "line": "layers"
     },
