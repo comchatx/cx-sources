@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.12
+
+- The tile's mark on the Plugins page is the signed drawing.
+
 ## 0.1.11
 
 - The `cost-first` and `data-costs` templates each send their Try it sentence, word for word, then the words you type after the template's name.
