@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.11
+
+- The `cost-first` and `data-costs` templates each send their Try it sentence, word for word, then the words you type after the template's name.
+
 ## 0.1.10
 
 - The card's line is the one signed on 2026-11-19: `comchatx.about` 「替 cx 买数据，只买用得到的，可以先报价。」 and `description` "Buys only the data cx needs, and quotes first if you ask."
