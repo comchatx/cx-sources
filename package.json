@@ -15,6 +15,9 @@
   ],
   "type": "module",
   "pi": {
+    "extensions": [
+      "./extensions/land.ts"
+    ],
     "skills": [
       "./skills"
     ],
@@ -23,6 +26,7 @@
     ]
   },
   "files": [
+    "extensions",
     "skills",
     "prompts",
     "README.zh-CN.md"
@@ -61,10 +65,13 @@
     }
   },
   "devDependencies": {
-    "@earendil-works/pi-ai": "1.4.0",
-    "@earendil-works/pi-coding-agent": "1.4.0",
+    "@earendil-works/pi-ai": "1.6.1",
+    "@earendil-works/pi-coding-agent": "1.6.1",
     "@types/node": "26.2.0",
     "typescript": "7.0.2",
     "vitest": "4.1.11"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
   }
 }
