@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- An extension keeps each answer a source's MCP tool gives, from a server the box registered as a source, whether cx called the tool directly or from a script: the whole answer in `/tenant/raw/<source>/<date>/<HHMMSS>Z-mcp-<tool>-<h8>`, each picture as a file of its own, and last its record, `<file>.ask.json`, with the tool and the arguments as typed. An error keeps nothing. A direct call's result names the file; a script's answer is the server's, unchanged.
+- The skill tells cx to look among the records before buying, to read an answer fetched within the seller's `tolerance` instead of buying it again, and to cite the file and its date.
+- The README says what the record beside each file keeps.
+
 ## 0.1.12
 
 - The tile's mark on the Plugins page is the signed drawing.

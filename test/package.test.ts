@@ -24,7 +24,7 @@ it("the pinned pi lists the package's skills and templates as its manifest names
   await loader.reload();
   const { skills, diagnostics } = loader.getSkills();
   expect(diagnostics).toEqual([]);
-  expect(manifest.pi).toEqual({ skills: ["./skills"], prompts: ["./prompts"] });
+  expect(manifest.pi).toEqual({ extensions: ["./extensions/land.ts"], skills: ["./skills"], prompts: ["./prompts"] });
   // The Plugins page names a package's skills from its `comchatx` field alone.
   expect(skills.map((skill) => skill.name).sort()).toEqual(Object.keys(manifest.comchatx.skills).sort());
   for (const skill of skills) expect(skill.description.trim(), skill.name).not.toBe("");
@@ -35,11 +35,11 @@ it("the pinned pi lists the package's skills and templates as its manifest names
   for (const prompt of prompts) expect(prompt.description.trim(), prompt.name).not.toBe("");
 });
 
-it("ships its skills, its templates, its READMEs and its license, and nothing else", () => {
+it("ships its extension, its skills, its templates, its READMEs and its license, and nothing else", () => {
   const packed = JSON.parse(execFileSync("npm", ["pack", "--dry-run", "--json", "--ignore-scripts"], { cwd: ROOT, encoding: "utf8" })) as { files: { path: string }[] }[];
-  const shipped = ["skills", "prompts"].flatMap((directory) => walk(join(ROOT, directory)).map((path) => relative(ROOT, path)));
+  const shipped = ["extensions", "skills", "prompts"].flatMap((directory) => walk(join(ROOT, directory)).map((path) => relative(ROOT, path)));
   expect(packed[0]!.files.map((file) => file.path).sort()).toEqual(["LICENSE", "README.md", "README.zh-CN.md", "package.json", ...shipped].sort());
-  expect(manifest.files).toEqual(["skills", "prompts", "README.zh-CN.md"]);
+  expect(manifest.files).toEqual(["extensions", "skills", "prompts", "README.zh-CN.md"]);
 });
 
 it("the card's name is comchatx.name, the one signed on 2026-11-11", () => {
